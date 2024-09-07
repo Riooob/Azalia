@@ -1,0 +1,43 @@
+body {
+  font-family: $fonts-main;
+}
+
+.red {
+  background-color: $red;
+  color: $white;
+}
+.gray {
+  background-color: $gray;
+  color: $dark-gray;
+}
+.gray-text {
+  color: #33333340;
+}
+.btn-container {
+  border-radius: 16px;
+  background-color: $gray;
+}
+.container {
+  padding: 0 430px 0px 320px ;
+
+  @media screen and (max-width: 1580px) {
+    padding: 0px 325px 0 242px;
+  } 
+  @media screen and (max-width: 431px) {
+    padding: 0px 16px;
+  }
+}
+
+.dark-gray {
+  color: $dark-gray;
+  font-weight: 900;
+}
+.none {
+  display: none;
+}
+
+
+
+
+
+

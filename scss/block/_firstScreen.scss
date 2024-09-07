@@ -1,0 +1,56 @@
+.first-screen-bg {
+  background-image: url("../../img/firstScreen.svg");
+  background-size: cover;
+}
+.first-screen-container {
+  padding: 0px 320px;
+  height: 100vh;
+
+  @include mediaTablet {
+    padding: 0px 242px;
+  }
+  @include mobile {
+    padding: 0px 16px;
+  }
+}
+.first-screen-title {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  font-weight: 300;
+  font-size: 164px;
+  line-height: 164px;
+  padding-top: 262px;
+
+  @include mediaTablet {
+    font-size: 100px;
+    line-height: 130px;
+    padding-top: 200px;
+  }
+  @include mobile {
+    padding-top: 104px;
+    font-size: 82px;
+    line-height: 82px;
+  }
+}
+.large-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: right;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 2px;
+  }
+}
+.mobile-none {
+  @media screen and (max-width: 361px) {
+    display: none;
+  } 
+}

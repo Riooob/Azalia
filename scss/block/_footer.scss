@@ -1,0 +1,165 @@
+.footer-gray {
+  color: #d9d9d9;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 320px;
+
+
+
+  // padding: 80px 320px;
+  // display: grid;
+  // grid-template-columns: repeat(15, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+
+
+
+
+
+  @include mediaTablet {
+    padding: 80px 242px;
+  }
+  @include mobile {
+    flex-direction: column;
+    padding: 80px 16px;
+  }
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-center {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+}
+.footer-btn-text {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.4px;
+  padding: 22px 32px;
+  gap: 10px;
+  align-items: center;
+
+  @include mediaTablet {
+    padding: 16px 23px;
+    border-radius: 12px;
+  }
+
+  &:last-child {
+    padding: 22px;
+    @include mediaTablet {
+      padding: 16px;
+    }
+  }
+  &:nth-child(3) {
+    padding: 22px;
+    @include mediaTablet {
+      padding: 16px;
+    }
+  }
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-tel {
+  display: flex;
+  align-items: center;
+  background-color: $gray;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.22px;
+  border-radius: 16px;
+  padding: 20px 24px;
+  color: #333333;
+  align-self: flex-end;
+
+  @include mediaTablet {
+    font-size: 17px;
+    padding: 14px 17px;
+    border-radius: 12px;
+  }
+
+  img {
+    margin-right: 16px;
+  }
+}
+.footer-btn-price {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 17px 50px;
+  border-radius: 16px;
+
+  @include mediaTablet {
+    font-size: 17px;
+    padding: 17px 34px;
+    border-radius: 12px;
+  }
+}
+
+
+// MOBILE
+.footer-mobile {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 16px 40px;
+  }
+  p {
+    margin-top: 40px;
+    a {
+      color: black;
+    }
+  }
+}
+.footer-block {
+  @include mobile {
+    display: flex;
+    gap: 8px;
+  }
+}
+.footer-block-1 {
+  @include mobile {
+    margin-top: 40px;
+  }
+}
+.footer-block-2 {
+  @include mobile {
+    margin-top: 8px;
+  }
+}
+.footer-block-3 {
+  @include mobile {
+    margin-top: 8px;
+  }
+  
+}
+.footer-block-1, .footer-block-2 {
+  
+  button {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.footer-tel {
+  @include mobile {
+    flex: 1;
+  }
+}
+.footer-btn-text {
+  @include mobile {
+    padding: 16px;
+  }
+}
+.footer-btn-price {
+  @include mobile {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

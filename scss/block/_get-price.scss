@@ -1,0 +1,90 @@
+.get-price-bg {
+  background-image: url("../../img/getPriceBG.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.get-price-container {
+  display: flex;
+  color: $white;
+  margin-top: 200px;
+  padding: 80px 0px 461px 0px;
+  @include mobile {
+    margin-top: 0px;
+    padding: 80px 0px 268px 0px;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 83.88px;
+    @include mediaTablet {
+      font-size: 62px;
+      line-height: 76.88px;
+    }
+    @include mobile {
+      font-size: 52px;
+      line-height: 60.58px;
+    }
+  }
+  span {
+    font-weight: 900;
+  }
+}
+.get-price-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: end;
+  @include mobile {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.callback-form {
+  align-content: end;
+  @include mobile {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    @include mediaTablet {
+      font-size: 15px;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 20px;
+    }
+  }
+  input {
+    background-color: $white;
+    border-radius: 16px;
+    padding: 17px 24px;
+    width: 360px;
+    @include mediaTablet {
+      width: auto;
+      padding: 10px 24px;
+      border-radius: 10px;
+    }
+    @include mobile {
+      padding: 16px 24px;
+    }
+  }
+  button {
+    border-radius: 16px;
+    padding: 20px 50px;
+
+    @include mediaTablet {
+      padding: 2px 14px;
+      border-radius: 10px;
+    }
+    @include mobile{
+      padding:16px 21px;
+    }
+  }
+}

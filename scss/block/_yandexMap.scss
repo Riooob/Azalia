@@ -1,0 +1,6 @@
+.yandex-map {
+    margin-top: 140px;
+    @include mobile {
+        margin-top: 100px;
+    }
+}

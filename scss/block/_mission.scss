@@ -1,0 +1,44 @@
+.mission-container {
+  display: flex;
+  margin-top: 160px;
+}
+.mission-text {
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 168px;
+  text-transform: uppercase;
+  color: $dark-gray;
+
+  @include mediaTablet {
+    font-size: 95px;
+    line-height: 124px;
+  }
+  @include mobile {
+    font-size: 52px;
+    line-height: 62.4px;
+  }
+}
+.bold {
+  font-weight: 900;
+}
+
+
+
+
+.mission-container {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  background-color: none;
+  pointer-events: none;
+
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 3s ease-in-out, transform 1s ease-in-out;
+}
+.image.fade-in {
+    opacity: 0.8;
+    transform: scale(1);
+  }

@@ -1,0 +1,97 @@
+.coop-container {
+  display: flex;
+  margin-top: 200px;
+  @include mobile {
+    margin-top: 120px;
+  }
+}
+.coop-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 83.88px;
+    @include mobile {
+      font-size: 42px;
+      line-height: 48.93px;
+    }
+  }
+}
+.coop-blocks {
+  display: flex;
+  gap: 20px;
+  border-radius: 16px;
+  margin-top: 60px;
+  justify-content: space-between;
+  width: 100%;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.coop-block {
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  background-color: $gray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    background-color: $dark-gray;
+    color: $white;
+    .gray-text {
+      color: #ffffff40;
+    }
+  }
+  h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33.6px;
+
+    @include mediaTablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  button {
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 16px;
+    padding: 20px 19px;
+
+    @include mediaTablet {
+      border-radius: 12px;
+      padding: 8px 19px;
+      font-size: 13px;
+    }
+    @include mobile {
+      padding: 16px 35px;
+      line-height: 19.6px;
+      margin-top: 16px;
+    }
+  }
+}
+.coop-block-text {
+  margin-top: 24px;
+  p {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-top: 12px;
+
+    @include mediaTablet {
+      margin-top: 7px;
+    }
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+}
